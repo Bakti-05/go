@@ -4,8 +4,8 @@ services:
   app:
     image: myapp:latest
     container_name: myapp-2
-    environment: 
-      - PORT=3000
+    ports:
+      - 3000:3000
     networks: 
       - creed
     restart: always
